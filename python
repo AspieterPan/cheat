@@ -1,0 +1,6 @@
+# Virtual Env
+python3 -m venv {env_name}
+
+# Active venv
+source venv/bin/activate
+
