@@ -42,3 +42,12 @@ def test_url_for():
     # 下面这个调用传入了多余的关键字参数，它们会被作为查询字符串附加到 URL 后面。
     print(url_for('test_url_for', num=2))  # 输出：/test?num=2
     return 'Test page'
+
+# 设置虚拟环境变量
+pip3 install python-dotenv
+touch .env .flaskenv
+echo "FLASK_DEBUG=1" >> .flaskenv
+
+# 运行时直接开启调试模式
+flask run --debug
+app.run(debug = true)
