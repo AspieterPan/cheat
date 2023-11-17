@@ -2,5 +2,5 @@
 python3 -m venv {env_name}
 
 # Active venv
-source venv/bin/activate
+source {env_name}/bin/activate
 
