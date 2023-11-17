@@ -4,3 +4,10 @@ python3 -m venv {env_name}
 # Active venv
 source {env_name}/bin/activate
 
+# Exit venv
+deactivate
+
+# Define Version(On MacOS)
+brew link --overwrite --force python@3.12
+
+
