@@ -50,4 +50,4 @@ echo "FLASK_DEBUG=1" >> .flaskenv
 
 # 运行时直接开启调试模式
 flask run --debug
-app.run(debug = true)
+app.run(debug = True)
