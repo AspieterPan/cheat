@@ -11,6 +11,11 @@ let d: char = 'a'; // Character type
 let s: &str = "Hello"; // String slice
 let s: String = String::from("Hello"); // String object
 
+let v1 = vec![1,2,3,4,5];
+let v2 = vec![10; 5];
+println!("{:?}", v); // 输出：[10, 10, 10, 10, 10]
+
+
 // Control Flow
 if x < 5 {
     // code
@@ -25,6 +30,10 @@ loop {
 
 for i in 0..5 {
     // Loop from 0 to 4
+}
+
+for i in (5..=0).rev() {
+    // Loop from 5 to 0
 }
 
 while x < 5 {
@@ -61,12 +70,20 @@ enum Message {
     ChangeColor(i32, i32, i32),
 }
 
+let msg = Message::ChangeColor(1,2,3);
+
 // Pattern Matching
 match msg {
     Message::Quit => { /* code */ },
     Message::Move { x, y } => { /* code */ },
     Message::Write(s) => { /*code */ },
     Message::ChangeColor(r, g, b) => { / code */ },
+}
+
+if let Massage::ChangeColor(r, g, b) = msg {
+    /* code */
+} else {
+    /* code */
 }
 
 // Using `Option`
